@@ -9,10 +9,10 @@ export default async function Home() {
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-teal-700 text-white">
       
       <header className="text-center py-16">
-        <h1 className="text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-blue-400">
+        <h1 className="text-2xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-blue-400">
           Welcome to EJP Blog
         </h1>
-        <p className="text-lg text-gray-300 mb-6">
+        <p className="text-lg text-gray-300 mb-8">
           A simple blog viewer powered by Next.js and Kinde Auth
         </p>
         <a
@@ -62,7 +62,7 @@ export default async function Home() {
         </div>
       </section>
 
-      
+      {/* Footer */}
       <footer className="text-center py-6">
         <p className="text-gray-300 text-sm">
           &copy; {new Date().getFullYear()} EJP. All rights reserved.

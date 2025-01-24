@@ -33,8 +33,8 @@ const Navbar = () => {
                     </Link>
 
                     <Link href="/profile" className="flex items-center space-x-2 cursor-pointer text-white text-lg hover:text-teal-300 transition">
-                            <FaUserCircle className="text-white text-lg" />
-                            <span className="text-white font-mono text-lg">{user?.given_name || "Profile"}</span>
+                            <FaUserCircle className="text-black text-lg" />
+                            <span className="text-black font-mono text-lg">{user?.given_name || "Profile"}</span>
                         </Link>
 
                     
@@ -66,8 +66,8 @@ const Navbar = () => {
 
             
             {isMenuOpen && (
-                <div className="md:hidden absolute top-16 left-0 right-0 bg-gradient-to-br from-teal-500 via-teal-400 to-blue-500 p-4 rounded-lg shadow-lg mt-2">
-                    <div className="flex flex-col items-center space-y-4">
+                <div className="md:hidden absolute max-w-[90%] mx-auto top-16 left-0 right-0 bg-gradient-to-br from-teal-500 via-teal-400 to-blue-500 p-4 rounded-lg shadow-lg mt-2">
+                    <div className="flex justify-start flex-col items-center space-y-4">
                         <Link href="/" className="flex items-center space-x-2 text-white text-lg hover:text-teal-300 transition">
                             <FaHome />
                             <span className="text-white font-mono text-lg">Home</span>
@@ -82,10 +82,7 @@ const Navbar = () => {
                        
                         {isAuthenticated ? (
                             <>
-                                <Link href="/profile" className="flex items-center space-x-2 cursor-pointer text-white text-lg hover:text-teal-300 transition">
-                                    <FaUserCircle className="text-white text-lg" />
-                                    <span className="text-white font-mono text-lg">{user?.given_name || "Profile"}</span>
-                                </Link>
+                              
                                 <LogoutLink>
                                     <button className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition">
                                         Log out
